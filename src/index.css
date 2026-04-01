@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   User Avatar Box
+------------------------------ */
+.cl-avatarBox {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%; /* make it circular */
+  overflow: hidden;
+}
+
+/* -----------------------------
+   Carousel Arrow
+------------------------------ */
+.arrow {
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* show pointer on hover */
+  transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------
+   Input Fields
+------------------------------ */
+input {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  accent-color: red; /* for checkboxes/radios */
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem; /* Tailwind rounded-md equivalent */
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #f87171; /* Tailwind red-400 */
+  box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.3);
+}
+
+/* -----------------------------
+   Slick Slider Pointer Fix
+------------------------------ */
+.slick-slide,
+.slick-track,
+.slick-list {
+  pointer-events: auto !important;
+}
+/* -----------------------------
+   Click button 
+------------------------------ */
+.arrow-btn {
+  background-color: #f53347;
+  transition: 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: #555;
+}
