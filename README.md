@@ -1,16 +1,98 @@
-# React + Vite
+# 🛒 Axiora – Modern E-commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Axiora is a fully responsive and feature-rich E-commerce web application designed to deliver a seamless and intuitive shopping experience. It integrates advanced filtering, dynamic cart management, and location-based delivery handling into a clean and scalable frontend architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Preview
 
-## React Compiler
+🔗 https://axiora-shop.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Core Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🔎 **Intelligent Product Discovery**
+  Real-time search across product title, category, and brand for quick navigation.
+
+* 🧠 **Advanced Filtering System**
+  Multi-criteria filtering with category, brand, and dynamic price range for refined product selection.
+
+* 🛒 **State-driven Cart Management**
+  Efficient add-to-cart, quantity updates, and item removal powered by centralized state management.
+
+* 📦 **Dynamic Product Detail View**
+  Individual product pages with pricing logic, discount calculation, and detailed descriptions.
+
+* 📍 **On-demand Location Detection**
+  User-triggered geolocation with reverse geocoding for accurate delivery address autofill.
+
+* 🔐 **Secure Authentication Flow**
+  Integrated authentication system using Clerk with protected user sessions.
+
+* 🎞️ **Interactive Product Carousel**
+  Smooth, auto-playing carousel highlighting key product categories with custom navigation controls.
+
+* 📱 **Responsive & Adaptive UI**
+  Fully optimized layout ensuring consistent user experience across mobile, tablet, and desktop devices.
+
+* ⚡ **Performance-focused Design**
+  Optimized rendering, efficient state updates, and smooth UI interactions.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js, Tailwind CSS
+* **State Management:** Context API
+* **Routing:** React Router DOM
+* **Authentication:** Clerk
+* **API Handling:** Axios
+* **UI Libraries:** React Slick, Lottie, React Icons
+
+---
+
+## 📂 Project Structure
+
+```bash id="p3k9s1"
+src/
+ ├── Assets/        # Images, animations, loaders
+ ├── Components/    # Reusable UI components
+ ├── Context/       # Global state (Data & Cart)
+ ├── Pages/         # Main pages (Home, Products, Cart, etc.)
+ └── App.jsx        # Main app routing & layout
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash id="x7k2q9"
+git clone https://github.com/your-username/axiora.git
+cd axiora
+npm install
+npm run dev
+```
+
+---
+
+## 📌 Key Highlights
+
+* Scalable component-based architecture
+* Clean separation of concerns (UI, state, routing)
+* Real-world E-commerce workflow implementation
+* Optimized filtering and rendering logic
+* Modern UI/UX principles with responsive design
+
+---
+
+## 👨‍💻 Author
+
+Jenil Hariyani
+GitHub: https://github.com/Jenil-Hariyani
+
+---
+
+## ⭐ Conclusion
+
+Axiora demonstrates strong frontend development capabilities by combining structured architecture, performance optimization, and user-centric design into a practical E-commerce solution.
