@@ -4,8 +4,8 @@
    User Avatar Box
 ------------------------------ */
 .cl-avatarBox {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%; /* make it circular */
   overflow: hidden;
 }

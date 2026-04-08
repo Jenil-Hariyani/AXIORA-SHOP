@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route, HashRouter } from "react-router-dom";
 import Products from "./Pages/Products";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -67,7 +67,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar
           location={location}
           getLocation={getLocation}
@@ -98,7 +98,7 @@ function App() {
           ></Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

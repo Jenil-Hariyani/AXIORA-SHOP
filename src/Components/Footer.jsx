@@ -50,7 +50,11 @@ const Footer = () => {
               >
                 <FaLinkedin className="hover:text-blue-500 transition" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/jenil_hariyani_/?next=&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="hover:text-pink-500 transition" />
               </a>
               <a

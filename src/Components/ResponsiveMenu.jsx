@@ -1,4 +1,9 @@
-import { UserButton, useUser, SignInButton } from "@clerk/clerk-react";
+import {
+  UserButton,
+  useUser,
+  SignInButton,
+  useClerk,
+} from "@clerk/clerk-react";
 import React from "react";
 import { FaUserCircle, FaHome, FaInfoCircle } from "react-icons/fa";
 import { MdProductionQuantityLimits } from "react-icons/md";
@@ -7,6 +12,7 @@ import { NavLink } from "react-router-dom";
 
 function ResponsiveMenu({ openNav, setOpenNav }) {
   const { user } = useUser();
+  const { signOut } = useClerk();
 
   const menuItems = [
     { name: "Home", path: "/", icon: <FaHome /> },
@@ -55,7 +61,7 @@ function ResponsiveMenu({ openNav, setOpenNav }) {
           </div>
 
           {/* Button */}
-          {!user && (
+          {!user ? (
             <SignInButton
               mode="modal"
               appearance={{
@@ -72,6 +78,16 @@ function ResponsiveMenu({ openNav, setOpenNav }) {
                 Sign In
               </button>
             </SignInButton>
+          ) : (
+            <button
+              onClick={() => {
+                signOut();
+                setOpenNav(false);
+              }}
+              className="bg-red-500 px-3 py-1 rounded-md text-white hover:bg-red-600 whitespace-nowrap"
+            >
+              Logout
+            </button>
           )}
         </div>
 

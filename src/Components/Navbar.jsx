@@ -2,6 +2,7 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
+  useClerk,
   UserButton,
 } from "@clerk/clerk-react";
 import { MapPin } from "lucide-react";
@@ -22,6 +23,7 @@ function Navbar({
   loadingLocation,
 }) {
   const { cartItem } = useCart();
+  const { signOut } = useClerk();
   const [openNav, setOpenNav] = useState(false);
 
   const ToggleDropDown = () => {
@@ -148,7 +150,15 @@ function Navbar({
               </SignInButton>
             </SignedOut>
             <SignedIn>
-              <UserButton />
+              <div className="flex items-center gap-3">
+                <UserButton />
+                <button
+                  onClick={() => signOut()}
+                  className="bg-red-500 px-3 py-1 rounded-md text-white"
+                >
+                  Logout
+                </button>
+              </div>
             </SignedIn>
           </div>
 
