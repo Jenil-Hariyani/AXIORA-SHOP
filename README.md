@@ -65,17 +65,6 @@ src/
 
 ---
 
-## ⚙️ Installation & Setup
-
-```bash id="x7k2q9"
-git clone https://github.com/your-username/axiora.git
-cd axiora
-npm install
-npm run dev
-```
-
----
-
 ## 📌 Key Highlights
 
 * Scalable component-based architecture
