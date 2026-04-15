@@ -17,10 +17,10 @@ const Footer = () => {
               Powering Your World with the Best in Electronics.
             </p>
             <p className="mt-2 text-sm">
-              123 Electronics St, Style City, NY 10001
+              Rakot,Gujrat
             </p>
             <p className="text-sm">Email: Axiora@gmail.com</p>
-            <p className="text-sm">Phone: (123) 456-7890</p>
+            <p className="text-sm">Phone:+91 99041 43421</p>
           </div>
 
           {/* CUSTOMER SERVICE */}
